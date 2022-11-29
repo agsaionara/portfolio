@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className='max-w-[1440px]'>
       <div className="md:max-w-[1124px] md:h-screen mx-auto md:grid grid-cols-2 items-center text-white">
-        <main className='md:max-w-sm bg-white rounded overflow-hidden shadow-xl items-center '>
+        <main className='md:max-w-sm bg-white rounded overflow-hidden shadow-xl items-center md:p-6'>
           <div className='md:shrink-0'>
             <Image 
               className='md:w-[400px] content-center'
@@ -23,12 +23,12 @@ export default function Home() {
           />
           </div>
           
-          <div className='md:px-6 md:py-4 text-violet-900 font-bold'>
-            <h1 className='md:text-2xl mb-2'>Saionara Aguiar</h1>
-            <div className="grid grid-rows-2 md:gap-2" >
-              <span className="">Ciêntista da Computação</span>      
-              <span className=''>Desenvolvedora</span>
-              <span className=''>Designer</span>
+          <div className='px-6 py-4 text-violet-900 font-bold md:items-center'>
+            <h1 className='text-2xl md:text-center mb-2'>Saionara Aguiar</h1>
+            <div className="grid grid-rows-2 gap-2" >
+              <span className="md:text-center">Ciêntista da Computação</span>      
+              <span className='md:text-center'>Desenvolvedora</span>
+              <span className='md:text-center'>Designer</span>
             </div>
             <div className="grid grid-cols-3 gap-3 p-2 ml-8" >              
               <a href='https://www.instagram.com/saionara_ag/' className='md:shrink-0 hover:text-green-500'>
@@ -44,7 +44,7 @@ export default function Home() {
           </div>
         </main>
 
-        <div className='md:shrink-0'>
+        <div className='p-5'>
           <div className='mx-auto mb-4 border-b-4 rounded border-green-500 pb-6'>
             <h1 className='font-bold mb-2'>Biografia</h1>
             <p>Saionara Aguiar, brasileira, bahiana, católica, técnica em informática, ciêntista da computação. 
