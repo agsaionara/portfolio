@@ -12,36 +12,39 @@ import logoGithub from '../assets/github-logo.png'
 export default function Home() {
   return (
     <div className='max-w-[1440px]'>
-      <div className="max-w-[1124px] h-screen mx-auto grid grid-cols-2 items-center text-white">
-        <main className='max-w-sm bg-white rounded overflow-hidden shadow-lg items-center '>
-          <Image 
-            className='w-[400px] content-center'
-            src={photoProfileImg} 
-            alt="Foto de perfil de Saionara Aguiar"
-            quality={100}
+      <div className="md:max-w-[1124px] md:h-screen mx-auto md:grid grid-cols-2 items-center text-white">
+        <main className='md:max-w-sm bg-white rounded overflow-hidden shadow-xl items-center '>
+          <div className='md:shrink-0'>
+            <Image 
+              className='md:w-[400px] content-center'
+              src={photoProfileImg} 
+              alt="Foto de perfil de Saionara Aguiar"
+              quality={100}
           />
-          <div className='px-6 py-4 text-violet-900 font-bold'>
-            <h1 className='text-2xl mb-2'>Saionara Aguiar</h1>
-            <div className="grid grid-rows-2" >
+          </div>
+          
+          <div className='md:px-6 md:py-4 text-violet-900 font-bold'>
+            <h1 className='md:text-2xl mb-2'>Saionara Aguiar</h1>
+            <div className="grid grid-rows-2 md:gap-2" >
               <span className="">Ciêntista da Computação</span>      
               <span className=''>Desenvolvedora</span>
               <span className=''>Designer</span>
             </div>
             <div className="grid grid-cols-3 gap-3 p-2 ml-8" >              
-              <a href='https://www.instagram.com/saionara_ag/'>
-                <InstagramLogo size={38} />
+              <a href='https://www.instagram.com/saionara_ag/' className='md:shrink-0 hover:text-green-500'>
+                <InstagramLogo size={38} className=' hover:text-green-500'/>
               </a>
-              <a href='https://www.facebook.com/saionara.aguiar'>
+              <a href='https://www.facebook.com/saionara.aguiar' className=' hover:text-green-500'>
                 <FacebookLogo size={38} />
               </a>
-              <a href='https://www.tiktok.com/@saio_ag'>
+              <a href='https://www.tiktok.com/@saio_ag' className=' hover:text-green-500'>
                 <TiktokLogo size={38}  />
               </a>
             </div>
           </div>
         </main>
 
-        <div className=''>
+        <div className='md:shrink-0'>
           <div className='mx-auto mb-4 border-b-4 rounded border-green-500 pb-6'>
             <h1 className='font-bold mb-2'>Biografia</h1>
             <p>Saionara Aguiar, brasileira, bahiana, católica, técnica em informática, ciêntista da computação. 
@@ -52,15 +55,15 @@ export default function Home() {
 
           <div className='mx-auto mb-6 border-b-4 rounded border-green-500 pb-6'>
             <h1 className='font-bold mb-2'>Habilidades Tecnologicas</h1>
-            <div className='grid grid-cols-5 gap-8 text-center'>
-              <div className='items-center '>
-              <a href='https://developer.mozilla.org/pt-BR/docs/Web/HTML'>
-                <Image
-                  src={logoHTML} 
-                  alt="HTML 5"
-                />
-                <span>HTML 5</span>
-                </a>
+            <div className='grid grid-cols-4 gap-8 text-center md:text-xs text-sm'>
+              <div className='items-center'>
+                <a href='https://developer.mozilla.org/pt-BR/docs/Web/HTML' className='md:shrink-0'>
+                  <Image
+                    src={logoHTML} 
+                    alt="HTML 5"
+                  />
+                  <span className=''>HTML 5</span>
+                  </a>
               </div>
               <div>
                 <a href='https://developer.mozilla.org/pt-BR/docs/Web/CSS'>
@@ -70,7 +73,6 @@ export default function Home() {
                   />
                   <span>CSS 4</span>
                 </a>
-                
               </div>
               <div>
               <a href='https://pt-br.reactjs.org/'>
@@ -97,7 +99,7 @@ export default function Home() {
               <div className='grid grid-cols-4 gap-2 text-center text-lg'>
                 <a 
                   href='https://github.com/agsaionara' 
-                  className='bg-green-500 hover:bg-[#05DA8E] text-black rounded-md p-2 flex items-center gap-2'>
+                  className='md:flex bg-green-500 hover:bg-[#05DA8E] text-black rounded-md p-2 items-center gap-2'>
                 <Image
                     src={logoGithub} 
                     alt="Github"
@@ -105,7 +107,7 @@ export default function Home() {
                   />
                   GitHub
                 </a>
-                <a href='https://www.linkedin.com/in/saionara-aguiar/' className='bg-green-500 hover:bg-[#05DA8E] text-black rounded-md p-2 flex items-center gap-2'>
+                <a href='https://www.linkedin.com/in/saionara-aguiar/' className='md:flex bg-green-500 hover:bg-[#05DA8E] text-black rounded-md p-2 items-center gap-2'>
                   <Image
                     src={logoLinkedin} 
                     alt="Linkedin"
@@ -115,7 +117,7 @@ export default function Home() {
                 </a>
                 <a 
                   href="https://www.behance.net/saionarag" 
-                  className='bg-green-500 hover:bg-[#05DA8E] text-black rounded-md p-2 flex items-center gap-2'>
+                  className='md:flex bg-green-500 hover:bg-[#05DA8E] text-black rounded-md p-2  items-center gap-2'>
                   <BehanceLogo size={32} />
                   Behance
                 </a>
@@ -130,10 +132,10 @@ export default function Home() {
           </div>
       </div>  
 
-      <footer className='flex gap-2 p-2 mt-2 items-center text-white text-sm bg-[#05DA8E]'>
-          Desenvolvido por Saionara AG <Lightbulb size={16}/>  
-          saionara.aguiargomes@gmail.com <Envelope size={16} />
-          (+55 77) 999362800 <WhatsappLogo size={16}/>
+      <footer className='md:flex gap-4 p-2 mt-2 items-center text-white text-sm bg-[#05DA8E]'>
+          <p className='md:flex gap-2'>Desenvolvido por Saionara AG <Lightbulb size={16}/> </p> 
+          <a className='md:flex gap-2' href="mailto:saionara.aguiargomes@gmail.com">saionara.aguiargomes@gmail.com <Envelope size={16} /></a>
+          <a className='md:flex gap-2' href='https://chat.whatsapp.com/KgHXtjzG5Gi2712Gw9QLbF'>Central de Atendimento<WhatsappLogo size={16}/></a>
       </footer>
     </div>
   )

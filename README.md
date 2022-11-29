@@ -1,4 +1,4 @@
-## Bem vindos ao meu Portofolio 💡
+## Bem vindos ao meu Portfolio 💡
 
 ### Exemplo simples de portifolio que sempre passará por modifcações
 
