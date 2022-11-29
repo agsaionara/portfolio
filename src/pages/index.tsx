@@ -24,11 +24,11 @@ export default function Home() {
           </div>
           
           <div className='px-6 py-4 text-violet-900 font-bold md:items-center'>
-            <h1 className='text-2xl md:text-center mb-2'>Saionara Aguiar</h1>
-            <div className="grid grid-rows-2 gap-2" >
-              <span className="md:text-center">Ciêntista da Computação</span>      
-              <span className='md:text-center'>Desenvolvedora</span>
-              <span className='md:text-center'>Designer</span>
+            <h1 className='text-2xl md:text-left text-center mb-2'>Saionara Aguiar</h1>
+            <div className="grid grid-rows-3 gap-2" >
+              <span className="md:text-left text-center">Ciêntista da Computação</span>      
+              <span className='md:text-left text-center'>Desenvolvedora</span>
+              <span className='md:text-left text-center'>Designer</span>
             </div>
             <div className="grid grid-cols-3 gap-3 p-2 ml-8" >              
               <a href='https://www.instagram.com/saionara_ag/' className='md:shrink-0 hover:text-green-500'>
