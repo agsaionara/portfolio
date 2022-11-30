@@ -47,7 +47,7 @@ export default function Home() {
         <div className='p-5'>
           <div className='mx-auto mb-4 border-b-4 rounded border-green-500 pb-6'>
             <h1 className='font-bold mb-2'>Biografia</h1>
-            <p>Saionara Aguiar, brasileira, bahiana, católica, técnica em informática, ciêntista da computação. 
+            <p className="text-justify">Saionara Aguiar, brasileira, baiana, católica, técnica em informática, ciêntista da computação. 
               Apaixonada por tecnologia desde dos 10 anos de idade, amante de metodologias agéis e design. Criatividade 
               é chama viva que a mantém inspirada por sonhar com um mundo melhor!
             </p>
@@ -96,7 +96,7 @@ export default function Home() {
             </div>
             <div className='mx-auto mb-6 border-b-4 rounded border-green-500 pb-6 '>
               <h1 className='font-bold mb-2'>Redes Profissionais</h1>
-              <div className='grid grid-cols-4 gap-2 text-center text-lg'>
+              <div className='grid grid-cols-3 gap-2 text-center text-lg'>
                 <a 
                   href='https://github.com/agsaionara' 
                   className='md:flex bg-green-500 hover:bg-[#05DA8E] text-black rounded-md p-2 items-center gap-2'>
@@ -133,9 +133,9 @@ export default function Home() {
       </div>  
 
       <footer className='md:flex gap-4 p-2 mt-2 items-center text-white text-sm bg-[#05DA8E]'>
-          <p className='md:flex gap-2'>Desenvolvido por Saionara AG <Lightbulb size={16}/> </p> 
-          <a className='md:flex gap-2' href="mailto:saionara.aguiargomes@gmail.com">saionara.aguiargomes@gmail.com <Envelope size={16} /></a>
-          <a className='md:flex gap-2' href='https://chat.whatsapp.com/KgHXtjzG5Gi2712Gw9QLbF'>Central de Atendimento<WhatsappLogo size={16}/></a>
+          <p className="flex gap-2">Desenvolvido por Saionara AG <Lightbulb size={16}/> </p> 
+          <a className='flex gap-2' href="mailto:saionara.aguiargomes@gmail.com">saionara.aguiargomes@gmail.com <Envelope size={16} /></a>
+          <a className='flex gap-2' href='https://chat.whatsapp.com/KgHXtjzG5Gi2712Gw9QLbF'>Central de Atendimento<WhatsappLogo size={16}/></a>
       </footer>
     </div>
   )
